@@ -5,7 +5,7 @@ with import <nixpkgs>{};
 , gnome2, gnome3, libnotify, libsecret, libuuid, libxcb, nspr, nss, systemd, xorg, wrapGAppsHook }:
 
 let
-  version = "1.21.2";
+  version = "1.28.4";
 
   rpath = lib.makeLibraryPath [
     alsaLib
@@ -51,7 +51,7 @@ let
     if stdenv.hostPlatform.system == "x86_64-linux" then
       fetchurl {
         url = "https://downloads.mongodb.com/compass/mongodb-compass_${version}_amd64.deb";
-        sha256 = "0cea6f1e3339e7eb184747e4de70b8494f03d3497f544b8b9ff2688cd89c16b0";
+        sha256 = "0ahg4wgdsdxsskn2fjgy0wwv9dh4i1cbzvc609iy2zv6zvnxi02z";
       }
     else
       throw "MongoDB compass is not supported on ${stdenv.hostPlatform.system}";
