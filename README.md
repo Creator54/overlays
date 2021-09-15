@@ -1,6 +1,6 @@
 # My overlays collection
 
-for stuff that is broken/unavailable in [nixpkgs](https://github.com/nixos/nixpkgs) but i need/use.
+for stuff that is broken/unavailable/not-updated in [nixpkgs](https://github.com/nixos/nixpkgs) but i need/use.
 
 ### Usage: 
 
